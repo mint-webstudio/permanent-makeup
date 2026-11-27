@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Перманентний макіяж брів, губ і вій. Юлія Бондар.">
+<meta name="theme-color" content="#0f0d0e">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:title" content="Юлія Бондар — перманентний макіяж">
+<meta property="og:description" content="Перманентний макіяж брів, губ і вій. Юлія Бондар.">
+<meta name="twitter:card" content="summary">
+<link rel="preload" as="image" href="assets/hero-bg.jpg">
+<title>Юлія Бондар — перманентний макіяж</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@200..800&family=Playfair+Display:wght@400..900&family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #efebe3;
+    --ink: #201b1c;
+    --red: #3e0606;
+    --cream: #f5f1ea;
+    --btn-dark: #2c2829;
+    --line: #cfc8bd;
+    --photo-dark: #2b2b2d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0f0d0e;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding-bottom: 40px;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  section { position: relative; }
+
+  /* ----- общие заголовки ----- */
+  .h {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 74px;
+    line-height: .9;
+    letter-spacing: -0.045em;
+    text-transform: none;
+  }
+
+  /* ----- HERO ----- */
+  .hero {
+    position: relative;
+    height: 840px;
+    background:
+      radial-gradient(ellipse at 52% 30%, #8a7f79 0%, transparent 42%),
+      linear-gradient(180deg, #58585b 0%, #3b3b3e 55%, #1a1a1b 100%);
+    overflow: hidden;
+    color: var(--cream);
+  }
+  .hero .name {
+    position: absolute;
+    left: 0; right: 0;
+    top: 378px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    line-height: .86;
+  }
+  .hero .name .first { display: block; font-size: 68px; padding-left: 0.03em; }
+  .hero .name .last  { display: block; font-size: 88px; padding-left: 0.03em; position: relative; left: -0.02em; }
+  .hero .sub {
+    position: absolute;
+    left: 0; right: 0; top: 555px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  .hero .btns {
+    position: absolute;
+    left: 12px; right: 12px; top: 718px;
+    display: grid;
+    gap: 11px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    background: var(--cream);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+  }
+
+  /* ----- ПРО МЕНЕ ----- */
+  .about { position: relative; padding: 80px 12px 0; }
+  .about-head {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  .about-head .h {
+    position: relative;
+    top: -28px;
+    font-size: 74px;
+    letter-spacing: -0.045em;
+    white-space: nowrap;
+    margin: 0 0 14px;
+    display: inline-block;
+    justify-self: start;
+  }
+  .intro-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
+  }
+  .intro-row .intro { margin: 8px 0 0 3px; }
+  .about-photo {
+    position: absolute;
+    right: 30px; top: 96px;
+    z-index: 0;
+    width: 132px; height: 124px;
+    margin: 0;
+    background: linear-gradient(135deg, #d0d0d0 0%, #5a5a5a 100%);
+    transform: rotate(18deg);
+  }
+  .about .intro {
+    font-size: 21px;
+    margin: 0 0 8px 3px;
+    letter-spacing: -0.01em;
+  }
+  .tiles2 {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .tile {
+    background: var(--red);
+    color: var(--cream);
+    height: 240px;
+    padding: 20px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+  .tile .dot {
+    position: absolute;
+    top: 22px; right: 22px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--cream);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+  .stat {
+    padding: 22px 16px 22px 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .stat:nth-child(odd) { border-right: 0; }
+  .stat b {
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat span { font-size: 18px; font-weight: 500; letter-spacing: -0.01em; }
+  .stat:nth-child(2) { padding-left: 24px; }
+  .stat:nth-child(4) { padding-left: 24px; }
+
+  /* ----- УСЛУГИ ----- */
+  .services { padding: 60px 12px 0; }
+  .services .h { margin-bottom: 42px; padding-left: 4px; }
+  .service {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 60%;
+    height: 240px;
+    background: var(--red);
+    color: var(--cream);
+  }
+  .service .txt {
+    padding: 22px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .service .txt h3 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  .service .txt p {
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .service .img {
+    margin: 12px;
+    width: auto;
+    height: 212px;
+    align-self: center;
+    min-width: 0;
+    background: linear-gradient(135deg, #c99a8c, #7b4a40);
+  }
+  .service .img.lips { background: linear-gradient(135deg, #d98a84, #8b3a3e); }
+  .service .img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78px;
+    margin-top: 10px;
+    background: var(--btn-dark);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .service + .service { margin-top: 10px; }
+
+  /* ----- МОЙ ПОДХОД ----- */
+  .approach { padding: 90px 12px 0; }
+  .approach .h { margin-bottom: 26px; padding-left: 4px; }
+  .mgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .mgrid .tile { height: 240px; }
+  .pic-cell { position: relative; height: 248px; margin-bottom: -8px; background: var(--bg); overflow: hidden; }
+  .pic-cell .pic {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 67%;
+    width: 56%;
+    height: auto;
+    aspect-ratio: 9 / 11;
+    transform: translate(-50%, -50%) rotate(15deg);
+    background: linear-gradient(135deg, #cfcfcf 0%, #505050 100%);
+  }
+
+  .pic-cell .pic svg { display: block; width: 100%; height: 100%; }
+
+  /* ----- ПРОЦЕДУРА ----- */
+  .fit { padding: 110px 12px 0; }
+  .fit .h { margin-bottom: 52px; padding-left: 4px; line-height: 1.15; }
+  .fit ol { list-style: none; }
+  .fit li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    min-height: 118px;
+    border-bottom: 1px solid var(--line);
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .fit li:last-child { border-bottom: 1px solid #8e8680; }
+  .fit li i { font-style: normal; padding: 2px 0 0 4px; }
+  .fit li span { padding-top: 2px; }
+
+  /* ----- ЭТАПЫ ----- */
+  .steps { padding: 110px 12px 0; }
+  .steps .h { margin-bottom: 30px; padding-left: 4px; }
+  .step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 155px;
+    background: var(--red);
+    color: var(--cream);
+    padding: 0 20px;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .step + .step { margin-top: 5px; }
+  .step .tag {
+    justify-self: start;
+    align-self: start;
+    margin-top: 42px;
+    background: var(--cream);
+    color: var(--ink);
+    padding: 3px 14px;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .step .txt { padding-top: 2px; }
+
+  /* ----- ВАРТІСТЬ ----- */
+  .prices { padding: 110px 12px 0; }
+  .prices .h { margin-bottom: 26px; padding-left: 4px; }
+  .price-photo {
+    height: 240px;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, #d6b8a8, #8d6a5c);
+  }
+  .price-list { list-style: none; border-top: 1px solid var(--line); margin-bottom: 18px; }
+  .price-photo svg { display: block; width: 100%; height: 100%; }
+  .price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--line);
+    font-size: 19px;
+    letter-spacing: -0.01em;
+  }
+  .price-list b { font-weight: 500; white-space: nowrap; }
+
+  /* ----- ЧАСТІ ЗАПИТАННЯ ----- */
+  .faq { padding: 110px 12px 40px; }
+  .faq .h { margin-bottom: 26px; padding-left: 4px; }
+  .qa {
+    background: var(--red);
+    color: var(--cream);
+    margin-bottom: 6px;
+  }
+  .qa summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto 1fr 36px;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .qa summary::-webkit-details-marker { display: none; }
+  .qtag {
+    background: var(--cream);
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    letter-spacing: .02em;
+  }
+  .pm {
+    position: relative;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--cream);
+  }
+  .pm::before, .pm::after {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 14px; height: 2px;
+    background: var(--red);
+    transform: translate(-50%, -50%);
+  }
+  .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+  
+  .qa p {
+    padding: 0 16px 18px;
+    font-size: 17px;
+    line-height: 1.35;
+    overflow: hidden;
+  }
+  .faq .more { margin-top: 14px; }
+
+  /* ----- МОДАЛЬНОЕ ОКНО ----- */
+  .modal-bg {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+  }
+  .modal-bg.open { opacity: 1; visibility: visible; }
+  .modal {
+    background: var(--bg);
+    width: 100%;
+    max-width: 420px;
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
+    padding: 26px 22px 24px;
+    position: relative;
+    transform: translateY(14px) scale(.98);
+    transition: transform .3s cubic-bezier(.22,.61,.36,1);
+  }
+  .modal-bg.open .modal { transform: none; }
+  .modal h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    text-transform: none;
+    margin-bottom: 12px;
+    padding-right: 32px;
+  }
+  .modal p { font-size: 17px; line-height: 1.4; margin-bottom: 16px; }
+  .modal form { display: grid; gap: 10px; }
+  .modal input {
+    height: 52px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .modal input:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 1px var(--red);
+  }
+  .modal button[type="submit"] {
+    height: 56px;
+    background: var(--red);
+    color: var(--cream);
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .modal .close {
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 40px; height: 40px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .modal .thanks { display: none; font-size: 17px; }
+  .modal.sent form { display: none; }
+  .modal.sent .thanks { display: block; }
+
+  /* ----- КОНТАКТИ ----- */
+  .contacts { padding: 110px 12px 40px; }
+  .contacts .h { margin-bottom: 26px; padding-left: 4px; }
+
+  /* ----- двоеточия в заголовках ----- */
+  .colon {
+    display: inline-block;
+    position: relative;
+    top: -0.106em;
+  }
+
+  /* ----- появление при прокрутке ----- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ===== АДАПТИВ И КНОПКИ ===== */
+  .h,
+  .about-head .h {
+    font-size: clamp(38px, 14.5vw, 74px);
+  }
+  .hero .name .first { font-size: clamp(44px, 15.8vw, 68px); }
+  .hero .name .last  { font-size: clamp(52px, 19.5vw, 88px); }
+  .hero .sub { font-size: clamp(15px, 4.6vw, 20px); }
+  .stat b { font-size: clamp(34px, 11.6vw, 50px); }
+
+  img, svg { max-width: 100%; height: auto; }
+
+  .btn, .more, .btn-light, .modal button, .qa summary {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: opacity .15s ease;
+  }
+  .btn:active, .more:active {
+    opacity: .82;
+    transform: none;
+    background-image: none;
+  }
+  .btn:focus, .more:focus, .qa summary:focus { outline: none; }
+  .btn:focus-visible, .more:focus-visible, .qa summary:focus-visible {
+    outline: 2px solid var(--cream);
+    outline-offset: 3px;
+  }
+  @media (hover: hover) {
+    .btn:hover, .more:hover { opacity: .92; }
+  }
+
+  @media (min-width: 600px) {
+    .page { box-shadow: 0 0 0 1px #1c1819; }
+  }
+  @media (max-width: 360px) {
+    .tile { font-size: 18px; padding: 16px; }
+    .service .txt p, .service .txt h3 { font-size: 18px; }
+    .price-list li { font-size: 17px; }
+    .stat span { font-size: 16px; }
+    .fit li, .step { font-size: 18px; }
+  }
+
+  .page { overflow-x: hidden; }
+
+  /* ===== кнопка записи с анимацией заливки ===== */
+  .btn-12,
+  .btn-12 *,
+  .btn-12 :after,
+  .btn-12 :before,
+  .btn-12:after,
+  .btn-12:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-12 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: var(--red);
+    background-image: none;
+    color: var(--cream);
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .more + .more { margin-top: 10px; }
+  .btn-12:disabled { cursor: default; }
+  .btn-12:-moz-focusring { outline: auto; }
+  .btn-12 svg { display: block; vertical-align: middle; }
+  .btn-12 [hidden] { display: none; }
+  .btn-12 {
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: none;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+    z-index: 0;
+  }
+  .btn-12 span { position: relative; z-index: 1; color: var(--cream); transition: color .2s ease; }
+  .btn-12 { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; touch-action: manipulation; }
+  .btn-12.is-inverted span { color: var(--ink); }
+  /* hover лише для пристроїв з точним курсором: на телефоні він не "липне" після тапу */
+  @media (hover: hover) and (pointer: fine) {
+    .btn-12:hover span { color: var(--ink); }
+    .btn-12:hover { --fill: 1; }
+  }
+  .btn-12:after,
+  .btn-12:before {
+    background: linear-gradient(90deg, var(--cream) 25%, transparent 0, transparent 50%, var(--cream) 0, var(--cream) 75%, transparent 0);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: translateY(calc((1 - var(--fill, 0)) * 120%));
+    transition: transform 0.2s ease;
+  }
+  .btn-12:after {
+    transform: translateY(calc((1 - var(--fill, 0)) * -120%));
+    background: linear-gradient(90deg, transparent 0, transparent 25%, var(--cream) 0, var(--cream) 50%, transparent 0, transparent 75%, var(--cream) 0);
+    z-index: -1;
+  }
+  .btn-12.is-pressing:after,
+  .btn-12.is-pressing:before { transition: none; }
+.qa[open]:not(.is-closing) .pm::after,.qa.is-open .pm::after{transform:translate(-50%,-50%) rotate(0deg)}.qa .pm{width:16px;height:16px;border-radius:0;background:none}.qa .pm::before,.qa .pm::after{width:16px;height:1px;background:var(--cream)}.qa .pm{transition:transform .45s cubic-bezier(.22,.61,.36,1)}.qa[open]:not(.is-closing) .pm,.qa.is-open .pm{transform:rotate(45deg)}.qa[open]:not(.is-closing) .pm::after,.qa.is-open .pm::after{transform:translate(-50%,-50%) rotate(90deg)}.qa .pm::before,.qa .pm::after{background:#fff;height:1px}.hero{background:linear-gradient(180deg,rgba(15,13,14,.35) 0%,rgba(15,13,14,.55) 60%,rgba(15,13,14,.75) 100%),url(assets/hero-bg.jpg) center 100%/auto 106% no-repeat!important}.about-photo,.pic-cell .pic{display:none!important}.rv-track{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 20px;padding:0;outline:none}.rv-track::-webkit-scrollbar{display:none}.rv-card{flex:0 0 calc(50% - 4px);scroll-snap-align:start;background:var(--red);color:var(--cream);padding:22px 20px 24px;display:flex;flex-direction:column;box-sizing:border-box}.rv-name{font-family:'Montserrat Alternates','Montserrat',sans-serif;font-size:15px;line-height:1.3;letter-spacing:.02em;margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid rgba(245,241,234,.35)}.rv-text{font-size:15px;line-height:1.5;margin:0}.rv-controls{display:flex;justify-content:center;gap:14px;margin-top:20px}.rv-btn{width:46px;height:46px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:20px;cursor:pointer;border-radius:0;padding:0;transition:opacity .25s ease}.rv-btn:disabled{opacity:.3;cursor:default}.rv-btn:focus-visible,.rv-track:focus-visible{outline:2px solid var(--red);outline-offset:3px}@media (min-width:600px){.rv-card{padding:26px 24px 28px}.rv-text{font-size:16px}}.final-contacts{background:#F5F2EB;border-left:6px solid #000;padding:64px 20px 56px 22px;margin-top:40px;color:#000}@media (min-width:600px){.final-contacts{padding:72px 28px 64px 30px}}.fc-title{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:900;font-size:clamp(34px,11vw,52px);line-height:.95;letter-spacing:-0.035em;color:#000;margin:0 0 30px}.fc-card{background:#fff;border:1px solid #3B0A0D;padding:22px 20px 20px;margin-bottom:16px}.fc-card h3{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:800;font-size:22px;margin:0 0 10px;color:#000}.fc-card p{font-family:Inter,Arial,sans-serif;font-size:16px;line-height:1.45;margin:0 0 8px;color:#000}.fc-hours{opacity:.8}.fc-map{height:150px;margin:14px 0 0;overflow:hidden}.fc-map svg{display:block;width:100%;height:100%}.fc-btn{display:flex;align-items:center;justify-content:center;height:52px;background:#3B0A0D;color:#fff;text-decoration:none;font-family:Inter,Arial,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;margin-top:14px;border:0;border-radius:0}.fc-btn-big{height:60px;font-size:15px;margin-top:0}.fc-contact{display:grid;gap:12px}.fc-btn-outline{flex:1;display:flex;align-items:center;justify-content:center;height:52px;border:1.5px solid #3B0A0D;color:#3B0A0D;background:transparent;text-decoration:none;font-family:Inter,Arial,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;border-radius:0}.fc-phone{display:block;text-align:center;font-family:Inter,Arial,sans-serif;font-size:18px;color:#000;padding:10px 0;text-decoration:underline}.final-contacts a:focus-visible{outline:2px solid #3B0A0D;outline-offset:3px}
+  /* ===== локація під кнопкою Viber ===== */
+  .loc { margin-top: 30px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  .loc-addr, .loc-phone { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; font-size: 16px; line-height: 1.4; overflow-wrap: anywhere; padding: 4px; -webkit-tap-highlight-color: transparent; }
+  .loc-hours { margin: 0; font-size: 13px; line-height: 1.4; opacity: .7; }
+  .loc a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+  /* ===== кнопки з анімацією: спочатку заливка, потім дія ===== */
+  /* заливка керується CSS-змінною --fill (JS або hover) */
+  @media (max-width: 360px) { .loc-addr, .loc-phone { font-size: 15px; } }
+
+  /* ===== відгуки: Swiper cards (як у демо) ===== */
+  #rvSwiper.swiper { width: 300px; height: 400px; margin: 0 auto; }
+  #rvSwiper .swiper-slide {
+    background-color: #3e0606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  #rvSwiper .rv-card {
+    background: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    flex: none;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #rvSwiper .rv-name { font-size: 14px; margin: 0 0 14px; padding-bottom: 12px; }
+  #rvSwiper .rv-text { font-size: 15px; line-height: 1.5; font-weight: normal; }
+</style>
+<style>
+/**
+ * Swiper 14.0.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2026 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: June 29, 2026
+ */
+
+:root{--swiper-theme-color:#007aff}:host{display:block;margin-left:auto;margin-right:auto;position:relative;z-index:1}.swiper{display:block;list-style:none;margin-left:auto;margin-right:auto;overflow:hidden;padding:0;position:relative;z-index:1}.swiper-vertical>.swiper-wrapper{flex-direction:column}.swiper-wrapper{box-sizing:initial;display:flex;height:100%;position:relative;transition-property:transform;transition-timing-function:var(--swiper-wrapper-transition-timing-function,initial);width:100%;z-index:1}.swiper-android .swiper-slide,.swiper-ios .swiper-slide,.swiper-wrapper{transform:translateZ(0)}.swiper-horizontal{touch-action:pan-y}.swiper-vertical{touch-action:pan-x}.swiper-slide{display:block;flex-shrink:0;height:100%;position:relative;transition-property:transform;width:100%}.swiper-slide-invisible-blank{visibility:hidden}.swiper-autoheight,.swiper-autoheight .swiper-slide{height:auto}.swiper-autoheight .swiper-wrapper{align-items:flex-start;transition-property:transform,height}.swiper-backface-hidden .swiper-slide{backface-visibility:hidden;transform:translateZ(0)}.swiper-3d.swiper-css-mode .swiper-wrapper{perspective:1200px}.swiper-3d .swiper-wrapper{transform-style:preserve-3d}.swiper-3d{perspective:1200px;.swiper-cube-shadow,.swiper-slide{transform-style:preserve-3d}}.swiper-css-mode{>.swiper-wrapper{overflow:auto;scrollbar-width:none;-ms-overflow-style:none;&::-webkit-scrollbar{display:none}}>.swiper-wrapper>.swiper-slide{scroll-snap-align:start start}&.swiper-horizontal{>.swiper-wrapper{scroll-snap-type:x mandatory}>.swiper-wrapper>.swiper-slide:first-child{margin-inline-start:var(--swiper-slides-offset-before);scroll-margin-inline-start:var(--swiper-slides-offset-before)}>.swiper-wrapper>.swiper-slide:last-child{margin-inline-end:var(--swiper-slides-offset-after)}}&.swiper-vertical{>.swiper-wrapper{scroll-snap-type:y mandatory}>.swiper-wrapper>.swiper-slide:first-child{margin-block-start:var(--swiper-slides-offset-before);scroll-margin-block-start:var(--swiper-slides-offset-before)}>.swiper-wrapper>.swiper-slide:last-child{margin-block-end:var(--swiper-slides-offset-after)}}&.swiper-free-mode{>.swiper-wrapper{scroll-snap-type:none}>.swiper-wrapper>.swiper-slide{scroll-snap-align:none}}&.swiper-centered{>.swiper-wrapper:before{content:"";flex-shrink:0;order:9999}>.swiper-wrapper>.swiper-slide{scroll-snap-align:center center;scroll-snap-stop:always}}&.swiper-centered.swiper-horizontal{>.swiper-wrapper>.swiper-slide:first-child{margin-inline-start:var(--swiper-centered-offset-before)}>.swiper-wrapper:before{height:100%;min-height:1px;width:var(--swiper-centered-offset-after)}}&.swiper-centered.swiper-vertical{>.swiper-wrapper>.swiper-slide:first-child{margin-block-start:var(--swiper-centered-offset-before)}>.swiper-wrapper:before{height:var(--swiper-centered-offset-after);min-width:1px;width:100%}}}.swiper-3d{.swiper-slide-shadow,.swiper-slide-shadow-bottom,.swiper-slide-shadow-left,.swiper-slide-shadow-right,.swiper-slide-shadow-top{height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%;z-index:10}.swiper-slide-shadow{background:#00000026}.swiper-slide-shadow-left{background-image:linear-gradient(270deg,#00000080,#0000)}.swiper-slide-shadow-right{background-image:linear-gradient(90deg,#00000080,#0000)}.swiper-slide-shadow-top{background-image:linear-gradient(0deg,#00000080,#0000)}.swiper-slide-shadow-bottom{background-image:linear-gradient(180deg,#00000080,#0000)}}.swiper-lazy-preloader{border:4px solid var(--swiper-preloader-color,var(--swiper-theme-color));border-radius:50%;border-top:4px solid #0000;box-sizing:border-box;height:42px;left:50%;margin-left:-21px;margin-top:-21px;position:absolute;top:50%;transform-origin:50%;width:42px;z-index:10}.swiper-watch-progress .swiper-slide-visible,.swiper:not(.swiper-watch-progress){.swiper-lazy-preloader{animation:swiper-preloader-spin 1s linear infinite}}.swiper-lazy-preloader-white{--swiper-preloader-color:#fff}.swiper-lazy-preloader-black{--swiper-preloader-color:#000}@keyframes swiper-preloader-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.swiper-virtual .swiper-slide{-webkit-backface-visibility:hidden;transform:translateZ(0)}.swiper-virtual.swiper-css-mode{.swiper-wrapper:after{content:"";left:0;pointer-events:none;position:absolute;top:0}}.swiper-virtual.swiper-css-mode.swiper-horizontal{.swiper-wrapper:after{height:1px;width:var(--swiper-virtual-size)}}.swiper-virtual.swiper-css-mode.swiper-vertical{.swiper-wrapper:after{height:var(--swiper-virtual-size);width:1px}}:root{--swiper-navigation-size:44px}.swiper-button-next,.swiper-button-prev{align-items:center;color:var(--swiper-navigation-color,var(--swiper-theme-color));cursor:pointer;display:flex;height:var(--swiper-navigation-size);justify-content:center;position:absolute;width:var(--swiper-navigation-size);z-index:10;&.swiper-button-disabled{cursor:auto;opacity:.35;pointer-events:none}&.swiper-button-hidden{cursor:auto;opacity:0;pointer-events:none}.swiper-navigation-disabled &{display:none!important}::slotted(svg),svg{height:100%;object-fit:contain;transform-origin:center;width:100%;fill:currentColor;pointer-events:none}}.swiper-button-lock{display:none}.swiper-button-next,.swiper-button-prev{margin-top:calc(0px - var(--swiper-navigation-size)/2);top:var(--swiper-navigation-top-offset,50%)}.swiper-button-prev{left:var(--swiper-navigation-sides-offset,4px);right:auto;.swiper-navigation-icon,::slotted(.swiper-navigation-icon){transform:rotate(180deg)}}.swiper-button-next{left:auto;right:var(--swiper-navigation-sides-offset,4px)}.swiper-horizontal{.swiper-button-next,.swiper-button-prev,~.swiper-button-next,~.swiper-button-prev{margin-left:0;margin-top:calc(0px - var(--swiper-navigation-size)/2);top:var(--swiper-navigation-top-offset,50%)}&.swiper-rtl .swiper-button-next,&.swiper-rtl~.swiper-button-next,&~.swiper-button-prev,.swiper-button-prev{left:var(--swiper-navigation-sides-offset,4px);right:auto}&.swiper-rtl .swiper-button-prev,&.swiper-rtl~.swiper-button-prev,&~.swiper-button-next,.swiper-button-next{left:auto;right:var(--swiper-navigation-sides-offset,4px)}&.swiper-rtl .swiper-button-next,&.swiper-rtl~.swiper-button-next,&~.swiper-button-prev,.swiper-button-prev{.swiper-navigation-icon,::slotted(.swiper-navigation-icon){transform:rotate(180deg)}}&.swiper-rtl .swiper-button-prev,&.swiper-rtl~.swiper-button-prev{.swiper-navigation-icon,::slotted(.swiper-navigation-icon){transform:rotate(0deg)}}}.swiper-vertical{.swiper-button-next,.swiper-button-prev,~.swiper-button-next,~.swiper-button-prev{left:var(--swiper-navigation-top-offset,50%);margin-left:calc(0px - var(--swiper-navigation-size)/2);margin-top:0;right:auto}.swiper-button-prev,~.swiper-button-prev{bottom:auto;top:var(--swiper-navigation-sides-offset,4px);.swiper-navigation-icon,::slotted(.swiper-navigation-icon){transform:rotate(-90deg)}}.swiper-button-next,~.swiper-button-next{bottom:var(--swiper-navigation-sides-offset,4px);top:auto;.swiper-navigation-icon,::slotted(.swiper-navigation-icon){transform:rotate(90deg)}}}.swiper-pagination{position:absolute;text-align:center;transform:translateZ(0);transition:opacity .3s;z-index:10;&.swiper-pagination-hidden{opacity:0}&.swiper-pagination-disabled,.swiper-pagination-disabled>&{display:none!important}}.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:var(--swiper-pagination-bottom,8px);left:0;top:var(--swiper-pagination-top,auto);width:100%}.swiper-pagination-bullets-dynamic{font-size:0;overflow:hidden;.swiper-pagination-bullet{position:relative;transform:scale(.33)}.swiper-pagination-bullet-active,.swiper-pagination-bullet-active-main{transform:scale(1)}.swiper-pagination-bullet-active-prev{transform:scale(.66)}.swiper-pagination-bullet-active-prev-prev{transform:scale(.33)}.swiper-pagination-bullet-active-next{transform:scale(.66)}.swiper-pagination-bullet-active-next-next{transform:scale(.33)}}.swiper-pagination-bullet{background:var(--swiper-pagination-bullet-inactive-color,#000);border-radius:var(--swiper-pagination-bullet-border-radius,50%);display:inline-block;height:var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));opacity:var(--swiper-pagination-bullet-inactive-opacity,.2);width:var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));button&{appearance:none;border:none;box-shadow:none;margin:0;padding:0}.swiper-pagination-clickable &{cursor:pointer}&:only-child{display:none!important}}.swiper-pagination-bullet-active{background:var(--swiper-pagination-color,var(--swiper-theme-color));opacity:var(--swiper-pagination-bullet-opacity,1)}.swiper-pagination-vertical.swiper-pagination-bullets,.swiper-vertical>.swiper-pagination-bullets{left:var(--swiper-pagination-left,auto);right:var(--swiper-pagination-right,8px);top:50%;transform:translate3d(0,-50%,0);.swiper-pagination-bullet{display:block;margin:var(--swiper-pagination-bullet-vertical-gap,6px) 0}&.swiper-pagination-bullets-dynamic{top:50%;transform:translateY(-50%);width:8px;.swiper-pagination-bullet{display:inline-block;transition:transform .2s,top .2s}}}.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-horizontal.swiper-pagination-bullets{.swiper-pagination-bullet{margin:0 var(--swiper-pagination-bullet-horizontal-gap,4px)}&.swiper-pagination-bullets-dynamic{left:50%;transform:translateX(-50%);white-space:nowrap;.swiper-pagination-bullet{transition:transform .2s,left .2s}}}.swiper-horizontal.swiper-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:transform .2s,right .2s}.swiper-pagination-fraction{color:var(--swiper-pagination-fraction-color,inherit)}.swiper-pagination-progressbar{background:var(--swiper-pagination-progressbar-bg-color,#00000040);position:absolute;.swiper-pagination-progressbar-fill{background:var(--swiper-pagination-color,var(--swiper-theme-color));height:100%;left:0;position:absolute;top:0;transform:scale(0);transform-origin:left top;width:100%}.swiper-rtl & .swiper-pagination-progressbar-fill{transform-origin:right top}&.swiper-pagination-horizontal,&.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,.swiper-horizontal>&,.swiper-vertical>&.swiper-pagination-progressbar-opposite{height:var(--swiper-pagination-progressbar-size,4px);left:0;top:0;width:100%}&.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite,&.swiper-pagination-vertical,.swiper-horizontal>&.swiper-pagination-progressbar-opposite,.swiper-vertical>&{height:100%;left:0;top:0;width:var(--swiper-pagination-progressbar-size,4px)}}.swiper-pagination-lock{display:none}.swiper-scrollbar{background:var(--swiper-scrollbar-bg-color,#0000001a);border-radius:var(--swiper-scrollbar-border-radius,10px);position:relative;touch-action:none;&.swiper-scrollbar-disabled,.swiper-scrollbar-disabled>&{display:none!important}&.swiper-scrollbar-horizontal,.swiper-horizontal>&{bottom:var(--swiper-scrollbar-bottom,4px);height:var(--swiper-scrollbar-size,4px);left:var(--swiper-scrollbar-sides-offset,1%);position:absolute;top:var(--swiper-scrollbar-top,auto);width:calc(100% - var(--swiper-scrollbar-sides-offset, 1%)*2);z-index:50}&.swiper-scrollbar-vertical,.swiper-vertical>&{height:calc(100% - var(--swiper-scrollbar-sides-offset, 1%)*2);left:var(--swiper-scrollbar-left,auto);position:absolute;right:var(--swiper-scrollbar-right,4px);top:var(--swiper-scrollbar-sides-offset,1%);width:var(--swiper-scrollbar-size,4px);z-index:50}}.swiper-scrollbar-drag{background:var(--swiper-scrollbar-drag-bg-color,#00000080);border-radius:var(--swiper-scrollbar-border-radius,10px);height:100%;left:0;position:relative;top:0;width:100%}.swiper-scrollbar-cursor-drag{cursor:move}.swiper-scrollbar-lock{display:none}.swiper-zoom-container{align-items:center;display:flex;height:100%;justify-content:center;text-align:center;width:100%;>canvas,>img,>svg{max-height:100%;max-width:100%;object-fit:contain}}.swiper-slide-zoomed{cursor:move;touch-action:none}.swiper .swiper-notification{left:0;opacity:0;pointer-events:none;position:absolute;top:0;z-index:-1000}.swiper-free-mode>.swiper-wrapper{margin:0 auto;transition-timing-function:ease-out}.swiper-grid>.swiper-wrapper{flex-wrap:wrap}.swiper-grid-column>.swiper-wrapper{flex-direction:column;flex-wrap:wrap}.swiper-fade{&.swiper-free-mode{.swiper-slide{transition-timing-function:ease-out}}.swiper-slide{pointer-events:none;transition-property:opacity;.swiper-slide{pointer-events:none}}.swiper-slide-active{pointer-events:auto;& .swiper-slide-active{pointer-events:auto}}}.swiper.swiper-cube{overflow:visible}.swiper-cube{.swiper-slide{backface-visibility:hidden;height:100%;pointer-events:none;transform-origin:0 0;visibility:hidden;width:100%;z-index:1;.swiper-slide{pointer-events:none}}&.swiper-rtl .swiper-slide{transform-origin:100% 0}.swiper-slide-active{&,& .swiper-slide-active{pointer-events:auto}}.swiper-slide-active,.swiper-slide-next,.swiper-slide-prev{pointer-events:auto;visibility:visible}.swiper-cube-shadow{bottom:0;height:100%;left:0;opacity:.6;position:absolute;width:100%;z-index:0;&:before{background:#000;bottom:0;content:"";filter:blur(50px);left:0;position:absolute;right:0;top:0}}}.swiper-cube{.swiper-slide-next+.swiper-slide{pointer-events:auto;visibility:visible}}.swiper-cube{.swiper-slide-shadow-cube.swiper-slide-shadow-bottom,.swiper-slide-shadow-cube.swiper-slide-shadow-left,.swiper-slide-shadow-cube.swiper-slide-shadow-right,.swiper-slide-shadow-cube.swiper-slide-shadow-top{backface-visibility:hidden;z-index:0}}.swiper.swiper-flip{overflow:visible}.swiper-flip{.swiper-slide{backface-visibility:hidden;pointer-events:none;z-index:1;.swiper-slide{pointer-events:none}}.swiper-slide-active{&,& .swiper-slide-active{pointer-events:auto}}}.swiper-flip{.swiper-slide-shadow-flip.swiper-slide-shadow-bottom,.swiper-slide-shadow-flip.swiper-slide-shadow-left,.swiper-slide-shadow-flip.swiper-slide-shadow-right,.swiper-slide-shadow-flip.swiper-slide-shadow-top{backface-visibility:hidden;z-index:0}}.swiper-creative{.swiper-slide{backface-visibility:hidden;overflow:hidden;transition-property:transform,opacity,height}}.swiper.swiper-cards{overflow:visible}.swiper-cards{.swiper-slide{backface-visibility:hidden;overflow:hidden;transform-origin:center bottom}}
+.msw{width:271px;height:325px;margin:0 auto;aspect-ratio:5/6;overflow:hidden;position:relative;touch-action:pan-y}.msw .swiper-wrapper{height:100%}.msw .swiper-slide{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-shrink:0}.msw .swiper-slide>span{display:flex;width:100%;height:100%;align-items:center;justify-content:center;font-size:13px;color:#4a4244;overflow:hidden}.msw .swiper-slide>span>img{display:block;width:100%;height:100%;object-fit:cover}
+.fr .ph{margin:0}
+.msw{overflow:visible}.msw .swiper-wrapper{overflow:hidden}.msw .ar{position:absolute;top:50%;margin-top:-22px;z-index:5}.msw .ar.l{left:-52px}.msw .ar.r{right:-52px}h1,h2{font-family:serif;font-weight:400}
+body{font-family:sans-serif}
+
+
+
+
+
+
+
+
+
+
+h1,h2{font-family:'MirraK2','Playfair Display',Georgia,serif;font-weight:400}body{font-family:'Manrope',system-ui,sans-serif;font-weight:300}
+
+
+.sub{position:relative;top:-24px}
+.nm{font-size:78px;line-height:.9;margin:6px 0 18px;font-family:'MirraK2','Playfair Display',Georgia,serif;font-weight:400;letter-spacing:.08em}
+.nm span{display:block}
+.nm span+span{text-align:right;padding-right:6px}
+*{-webkit-tap-highlight-color:transparent}
+*{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}.bt,.cl,.bt *,.cl *{-webkit-user-select:none;user-select:none}.bt:active,.cl:active,.bt.tap,.cl.tap,.bt:focus,.cl:focus{color:#111!important;opacity:1!important;filter:none!important;border-color:#fff!important;transform:none!important}
+@media (min-width:768px){.msw{width:333px;height:400px}}
+.msw .ar,.msw .ar *{transition:none!important;animation:none!important}.msw .ar .arrow-top:after,.msw .ar .arrow-bottom:after{display:none!important}.msw .ar:active .arrow,.msw .ar.l:active .arrow,.msw .ar:hover .arrow{transform:none!important}.msw .ar.l .arrow{transform:scaleX(-1)!important}
+#services{padding-top:8px}.fact:last-child{margin-bottom:0}
+.bt:active::before,.cl:active::before{transform:skew(45deg) rotate(180deg) translate(-50%,-50%);transition:transform .5s ease-out}
+.bt:active,.cl:active{color:#fff}
+#services{padding-top:0}.p{padding:0 24px 28px}section.p:first-child{padding-top:36px}.ac:last-child{margin-bottom:0}
+.dots{margin-bottom:28px}
+.msw .ar .arrow-top,.msw .ar .arrow-bottom{background:#fff!important}.msw .ar.l .arrow,.msw .ar.l:active .arrow,.msw .ar.l:hover .arrow{transform:scaleX(-1)!important}.msw .ar.r .arrow,.msw .ar.r:active .arrow,.msw .ar.r:hover .arrow{transform:none!important}
+.msw .ar.is-disabled,.msw .ar.swiper-button-disabled{opacity:0!important;pointer-events:none}
+.kn{margin-left:-.08em}
+.nm .kn,.kn{display:inline!important;margin-left:-.08em}
+@media (max-width:380px){.msw{width:230px;height:276px}}
+.bt,.cl{isolation:isolate}.bt::before,.cl::before,.bt::after,.cl::after{will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}.bt.tap::before,.cl.tap::before,.bt.tap::after,.cl.tap::after{transition:transform .5s ease-out}
+button.dot-b,#dots button{position:relative}button.dot-b::after,#dots button::after{content:'';position:absolute;inset:-12px;border-radius:50%}@media (max-width:400px){.nm{font-size:64px}}
+@media (max-width:400px){.msw .ar.l{left:-36px}.msw .ar.r{right:-36px}}
+.msw .ar{transition:opacity .4s ease!important}.msw .ar.is-disabled,.msw .ar.swiper-button-disabled{opacity:0!important;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s!important}.msw .ar:not(.is-disabled):not(.swiper-button-disabled){visibility:visible;transition:opacity .4s ease,visibility 0s!important}
+
+#services .q{justify-content:flex-start!important;align-items:baseline!important;gap:10px}.q .sn{flex:none;font-size:18px}.q .ld{flex:1;min-width:16px;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.85) 0 7px,transparent 7px) 0 0/11px 1px;background-repeat:space;transform:translateY(-5px)}.q .pr{flex:none;font-size:16px;white-space:nowrap;font-variant-numeric:tabular-nums;color:#fff}#services .q svg{display:none}
+#dots button.dot-b{border:.5px solid #8a8a8a!important;box-shadow:none!important;box-sizing:border-box}
+#services .pn{grid-template-rows:1fr!important}#services .pn>div{visibility:visible!important}#services .pn p{opacity:1!important;transform:none!important}#services .q{cursor:default}
+#dots button.dot-b{width:13px!important;height:13px!important}
+.msw .ar .arrow-top,.msw .ar .arrow-bottom{height:2px!important}
+
+/* ===== локація в контактах ===== */
+.loc-a { color: #fff; text-decoration: underline; text-underline-offset: 4px; font-size: 17px; line-height: 1.4; display: inline-block; margin-bottom: 10px; overflow-wrap: anywhere; }
+.loc-h { margin: 0 0 30px; font-size: 14px; line-height: 1.4; color: #fff; opacity: .85; }
+/* ===== відгуки: горизонтальна карусель з білими рамками ===== */
+.rvs { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 24px; margin: 0 -24px; padding: 4px 24px 8px; scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.rvs::-webkit-scrollbar { display: none; }
+.rvs:focus-visible { outline: 1px solid #fff; outline-offset: 4px; }
+.rvc { flex: 0 0 82%; max-width: 340px; scroll-snap-align: start; border: 1px solid #fff; padding: 20px 18px; display: flex; flex-direction: column; gap: 12px; }
+.rvn { margin: 0; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; line-height: 1.3; }
+.rvt { margin: 0; font-size: 15px; line-height: 1.55; }
+.rvnav { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
+.rvb { width: 44px; height: 44px; border: 1px solid #fff; background: none; color: #fff; font: inherit; font-size: 18px; cursor: pointer; }
+.rvb:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (min-width: 600px) { .rvc { flex-basis: 340px; } }
+
+</style>
+<style>
+  /* ===== стрілки відгуків ===== */
+  .rvWrap { position: relative; width: 100%; display: flex; justify-content: center; }
+  .rvClip {
+    width: min(344px, calc(100% - 96px)); margin: 0 auto; padding: 20px 0;
+    overflow: hidden; box-sizing: border-box;
+  }
+  .rvArrow {
+    position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
+    width: 56px; height: 56px; padding: 0; margin: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: none; border: 0; color: var(--red);
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+    transition: color .25s ease;
+  }
+  .rvArrow svg { width: 46px; height: 46px; fill: none; stroke: currentColor; stroke-width: 0.9; stroke-linecap: round; stroke-linejoin: round; }
+  .rvPrev { left: calc(50% - 236px); }
+  .rvNext { right: calc(50% - 236px); }
+  @media (hover: hover) {
+    .rvArrow:hover { color: var(--ink); }
+  }
+  .rvArrow:focus { outline: none; }
+  .rvArrow:focus-visible { outline: 1px solid var(--red); outline-offset: 2px; }
+  @media (max-width: 480px) {
+    #rvSwiper.swiper { width: 262px; height: 350px; }
+    .rvPrev { left: calc(50% - 197px); }
+    .rvNext { right: calc(50% - 197px); }
+  }
+</style>
+<style>
+  /* ===== дизайн карточок відгуків ===== */
+  #rvSwiper .swiper-slide {
+    position: relative;
+    box-shadow: none;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(.16, 1, .3, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  #rvSwiper .swiper-wrapper { transition-timing-function: cubic-bezier(.16, 1, .3, 1); }
+  /* текст не размывается при движении карточек */
+  #rvSwiper .rv-card, #rvSwiper .rv-text, #rvSwiper .rv-name { -webkit-font-smoothing: antialiased; backface-visibility: hidden; transform: translateZ(0); }
+  #rvSwiper .swiper-slide-shadow, #rvSwiper .swiper-slide-shadow-cards { display: none !important; }
+  #rvSwiper .swiper-slide::before {
+    content: attr(data-label);
+    position: absolute; top: 22px; left: 26px; z-index: 2;
+    font-size: 11px; letter-spacing: .18em; font-weight: 500;
+    color: rgba(245, 241, 234, .6);
+  }
+  #rvSwiper .swiper-slide::after {
+    content: ""; position: absolute; inset: 12px; z-index: 1;
+    border: 1px solid rgba(245, 241, 234, .22); border-radius: 12px;
+    pointer-events: none;
+  }
+  #rvSwiper .rv-card { position: relative; z-index: 2; padding: 56px 30px 30px; }
+  #rvSwiper .rv-card::before {
+    display: none;
+    content: "\201C";
+    position: absolute; top: 34px; right: 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 96px; line-height: 1; color: rgba(245, 241, 234, .14);
+    pointer-events: none;
+  }
+  #rvSwiper .rv-name {
+    font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: rgba(245, 241, 234, .75); line-height: 1.5; padding-right: 56px;
+    margin: 0 0 16px; padding-bottom: 14px; border-bottom: 1px solid rgba(245, 241, 234, .3);
+  }
+  #rvSwiper .rv-text { font-size: 15px; line-height: 1.6; color: #f5f1ea; }
+</style>
+<style>
+  /* ===== лічильники статистики ===== */
+  .count { font-variant-numeric: tabular-nums; }
+  .stat b .count { font-size: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; color: inherit; }
+</style>
+<style>
+/* ===== адаптація під телефони (мобільна доработка) ===== */
+/* Стрілки відгуків і каруселі: не виходять за екран на 320–480px */
+@media (max-width: 480px) {
+  .rvClip { width: calc(100% - 104px) !important; max-width: none; }
+  #rvSwiper.swiper { width: 100% !important; height: auto !important; min-height: 360px; }
+  #rvSwiper .swiper-slide { height: auto !important; }
+  .rvPrev { left: -12px !important; }
+  .rvNext { right: -12px !important; }
+  .rvArrow { width: 52px; height: 52px; }
+  .rvArrow svg { width: 40px; height: 40px; stroke-width: 0.9; }
+}
+/* Картка відгуку: текст має вміщуватися, без наїзду на лічильник і рамку */
+#rvSwiper .rv-card { height: auto; min-height: 100%; padding-top: 64px; padding-bottom: 34px; }
+#rvSwiper .rv-name { padding-right: 44px; }
+/* Зони натискання не менше 44px */
+.modal .close { width: 44px; height: 44px; }
+.loc-addr, .loc-phone { display: inline-block; padding: 12px 6px; min-height: 44px; box-sizing: border-box; }
+/* Короткі екрани (ландшафт, маленькі телефони): модальне вікно прокручується */
+@media (max-height: 560px) {
+  .modal { max-height: 100vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+}
+/* Безпечні зони iPhone */
+body { padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+</style>
+<style>
+/* ===== услуги на телефонах: текст сверху, фото на всю ширину карточки, без обрезки ===== */
+@media (max-width: 600px) {
+  .service { grid-template-columns: minmax(0, 1fr); height: auto; }
+  .service .txt { padding: 22px 20px 18px; justify-content: flex-start; gap: 14px; }
+  .service .img { width: auto; height: auto; margin: 0 12px 12px; align-self: stretch; }
+  .service .img img { display: block; width: 100%; height: auto; object-fit: contain; }
+}
+/* 601–768px: сохраняем две колонки, фото целиком */
+@media (min-width: 601px) and (max-width: 768px) {
+  .service { height: auto; min-height: 240px; }
+  .service .img { height: auto; align-self: center; }
+  .service .img img { width: 100%; height: auto; object-fit: contain; }
+}
+</style>
+<style>
+  /* ===== відгуки: як у демо Swiper cards, без обрізки боків ===== */
+  .rvClip { overflow: visible !important; }
+  #rvSwiper.swiper { overflow: visible; }
+  #rvSwiper .swiper-slide-shadow,
+  #rvSwiper .swiper-slide-shadow-cards { display: block !important; }
+</style>
+<style>
+  /* ===== менше пустого місця між відгуками і вартістю (телефон) ===== */
+  .prices { padding-top: 110px !important; }  /* як у розділі «Етапи» */
+  @media (max-width: 600px) {
+    #rvSwiper.swiper { min-height: 0; }
+    .rvClip { padding-bottom: 0; }
+  }
+</style>
+<style>
+  /* плавний перехід карток: м'яка крива для свайпу, стрілок і перетягування */
+  #rvSwiper .swiper-slide,
+  #rvSwiper .swiper-wrapper { transition-timing-function: cubic-bezier(.22, .9, .3, 1) !important; }
+</style>
+<style>
+  /* ===== плавне відображення стрілок відгуків ===== */
+  .rvWrap .rvArrow {
+    transition: color .25s ease, opacity .6s cubic-bezier(.22, .9, .3, 1), visibility .6s step-end;
+  }
+  .rvWrap .rvArrow:not(.is-hidden) {
+    transition: color .25s ease, opacity .6s cubic-bezier(.22, .9, .3, 1), visibility 0s;
+  }
+  .rvWrap .rvArrow.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+</style>
+<style>
+  /* ===== адаптив v2: стрелки вне карточек, заголовки без разрыва двоеточия ===== */
+  .nw { white-space: nowrap; }
+
+  /* заголовки секций: масштабируются под ширину экрана, не переходят на 2-ю строку с двоеточием */
+  .page .h,
+  .page .about-head .h {
+    font-size: min(74px, calc((100vw - 24px) / 6.6));
+  }
+
+  /* карусель отзывов: сетка [стрелка | карточки | стрелка], стрелки никогда не перекрывают карточки */
+  .rvWrap {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 14px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+  .rvClip {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 16px 0 !important;
+    overflow: hidden !important;
+  }
+  .rvWrap .rvArrow {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    width: 44px;
+    height: 44px;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .rvWrap .rvPrev { grid-column: 1; }
+  .rvWrap .rvNext { grid-column: 3; }
+  .rvWrap .rvArrow svg { width: 30px; height: 30px; }
+  #rvSwiper.swiper {
+    width: 100% !important;
+    max-width: 340px;
+    height: auto !important;
+    min-height: 360px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  #rvSwiper .swiper-slide { height: auto !important; }
+
+  /* очень узкие экраны (до 399px): стрелки под карточками, по краям */
+  @media (max-width: 399px) {
+    .rvWrap { grid-template-columns: minmax(0, 1fr); padding: 0 10px; }
+    .rvClip { grid-column: 1; }
+    .rvWrap .rvPrev { grid-column: 1; grid-row: 2; justify-self: start; }
+    .rvWrap .rvNext { grid-column: 1; grid-row: 2; justify-self: end; }
+    #rvSwiper .rv-card { padding-left: 24px; padding-right: 24px; }
+  }
+/* ===== відгуки: картки як у демо Swiper (240×320, радіус 18px) ===== */
+#rvSwiper.swiper {
+  width: min(340px, calc(100vw - 48px)) !important;
+  max-width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 3 / 4;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}
+#rvSwiper .swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+#rvSwiper .rv-card {
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 44px 18px 18px !important;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+#rvSwiper .rv-card::-webkit-scrollbar { display: none; }
+#rvSwiper .rv-name {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  padding-right: 0 !important;
+  margin: 0 0 10px !important;
+  padding-bottom: 10px !important;
+}
+#rvSwiper .rv-text {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+/* ===== фінальна адаптація відгуків: стрілки, без обрізки карток, розміри під будь-який телефон ===== */
+/* карти більше не обрізаються при перетягуванні: обрізка лише по краю сторінки */
+.page { overflow-x: clip; }
+.rvClip { overflow: visible !important; padding: 16px 0 !important; }
+#rvSwiper.swiper { overflow: visible !important; }
+
+/* стрілки: більші та товстіші */
+.rvWrap { grid-template-columns: 54px minmax(0, 1fr) 54px !important; column-gap: 36px !important; }
+.rvWrap .rvArrow { width: 54px !important; height: 54px !important; }
+.rvWrap .rvArrow svg { width: 42px !important; height: 42px !important; stroke-width: 1.3 !important; }
+
+/* вузькі телефони (до 520px): стрілки під картками, по краях; картка тягнеться за шириною екрана */
+@media (max-width: 520px) {
+  .rvWrap { grid-template-columns: minmax(0, 1fr) !important; padding: 0 12px !important; row-gap: 40px !important; }
+  .rvClip { grid-column: 1 !important; }
+  .rvWrap .rvPrev { grid-column: 1 !important; grid-row: 2 !important; justify-self: start !important; }
+  .rvWrap .rvNext { grid-column: 1 !important; grid-row: 2 !important; justify-self: end !important; }
+  #rvSwiper.swiper { width: min(340px, calc(100vw - 48px)) !important; }
+}
+/* компʼютер: стрілки ближче одна до одної й до карток */
+@media (min-width: 769px) {
+  .rvWrap { max-width: 500px !important; margin: 0 auto !important; column-gap: 24px !important; }
+  #rvSwiper.swiper { left: 0 !important; top: 20px !important; margin-left: auto !important; margin-right: auto !important; }
+  .rvWrap { grid-template-columns: 60px minmax(0, 1fr) 60px !important; }
+  .rvWrap .rvArrow { width: 54px !important; height: 54px !important; }
+  .rvWrap .rvArrow svg { width: 46px !important; height: 46px !important; }
+}
+/* ===== відгуки: текст не зсувається при листанні ===== */
+#rvSwiper .rv-card { justify-content: flex-start !important; }
+#rvSwiper .rv-name { min-height: 3.6em; display: flex; align-items: flex-end; }
+/* ===== відгуки: текст рендериться в шарі карточки, а не у своїх шарах (без сдвигу після анімації) ===== */
+#rvSwiper .rv-text, #rvSwiper .rv-name {
+  transform: none !important;
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+}
+/* ===== відгуки на телефонах: та сама пропорція 3:4, що й на ПК, розмір від ширини екрана ===== */
+#rvSwiper.swiper {
+  width: min(300px, calc(100vw - 88px)) !important;
+  max-width: 300px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto !important;
+}
+#rvSwiper .swiper-slide { width: 100% !important; height: 100% !important; }
+#rvSwiper .rv-card {
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 52px 22px 22px !important;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+#rvSwiper .rv-card::-webkit-scrollbar { display: none; }
+#rvSwiper .rv-name { font-size: clamp(12.5px, 3.6vw, 16px) !important; padding-right: 0 !important; }
+#rvSwiper .rv-text { font-size: clamp(14px, 4.2vw, 17px) !important; line-height: 1.5 !important; }
+/* ===== стрілки відгуків: симетрична сітка, чорний колір без зміни ===== */
+.rvWrap {
+  display: grid !important;
+  grid-template-columns: 48px minmax(0, 1fr) 48px !important;
+  column-gap: 36px !important;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+.rvWrap .rvClip { grid-column: 2 !important; grid-row: 1 !important; width: auto !important; min-width: 0; margin: 0 !important; padding: 16px 0 !important; overflow: visible !important; }
+.rvWrap .rvArrow {
+  position: static !important; left: auto !important; right: auto !important; top: auto !important;
+  transform: none !important;
+  width: 48px !important; height: 48px !important;
+  justify-self: center;
+  color: #000 !important;
+  grid-row: 1 !important;
+}
+.rvWrap .rvArrow:hover, .rvWrap .rvArrow:focus, .rvWrap .rvArrow:active, .rvWrap .rvArrow:focus-visible { color: #000 !important; }
+.rvWrap .rvArrow svg { width: 40px !important; height: 40px !important; stroke: #000 !important; }
+.rvWrap .rvPrev { grid-column: 1 !important; }
+.rvWrap .rvNext { grid-column: 3 !important; }
+@media (max-width: 520px) {
+  .rvWrap { grid-template-columns: 1fr 1fr !important; row-gap: 0; column-gap: 0 !important; }
+  .rvWrap .rvClip { grid-column: 1 / span 2 !important; grid-row: 1 !important; padding: 16px 0 0 !important; }
+  .rvWrap .rvPrev { grid-column: 1 !important; grid-row: 2 !important; justify-self: end !important; margin: -6px 24px 0 0 !important; }
+  .rvWrap .rvNext { grid-column: 2 !important; grid-row: 2 !important; justify-self: start !important; margin: -6px 0 0 24px !important; }
+  .rvWrap .rvArrow { width: 58px !important; height: 58px !important; }
+  .rvWrap .rvArrow svg { width: 50px !important; height: 50px !important; }
+}
+/* ===== адаптив відгуків: жоден елемент не виходить за екран на будь-якій ширині ===== */
+.page { overflow-x: clip; }
+#rvSwiper.swiper { max-width: calc(100vw - 88px) !important; }
+.rvWrap, .rvClip { max-width: 100%; }
+/* ===== відгуки: задні картки не виходять за краї екрана (обрізка лише по краю сторінки) ===== */
+.rvWrap { overflow-x: hidden; overflow-x: clip; }
+/* ===== відгуки: стопка карток повністю всередині екрана на будь-якому телефоні ===== */
+#rvSwiper.swiper {
+  width: min(280px, calc(100vw - 160px)) !important;
+  max-width: none !important;
+  position: relative;
+  left: -20px;
+}
+/* ===== відгуки: уся стопка (картка + задні) масштабується пропорційно екрану, як на ПК ===== */
+@media (max-width: 520px) {
+  #rvSwiper.swiper {
+    width: 300px !important;
+    height: 400px !important;
+    aspect-ratio: auto !important;
+    max-width: none !important;
+    left: 0 !important;
+    transform: scale(.98);
+    transform-origin: 50% 0;
+    margin: 36px auto -20px !important;
+  }
+}
+@media (max-width: 400px) {
+  #rvSwiper.swiper { transform: scale(.93); margin: 36px auto -40px !important; }
+}
+@media (max-width: 360px) {
+  #rvSwiper.swiper { transform: scale(.88); margin: 36px auto -60px !important; }
+}
+@media (max-width: 340px) {
+  #rvSwiper.swiper { transform: scale(.83); margin: 36px auto -80px !important; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <h1 class="name">
+      <span class="first">Юлія</span>
+      <span class="last">Бондар</span>
+    </h1>
+    <p class="sub">перманентний макіяж · майстер</p>
+    <nav class="btns">
+      <a class="btn btn-12" href="#services"><span>Перейти до послуг</span></a>
+    </nav>
+  </header>
+
+  <!-- ===== ПРО МЕНЕ ===== -->
+  <section class="about">
+    <div class="about-head">
+      <h2 class="h">Про <span class="nw">мене<span class="colon" style="top:-0.014em">:</span></span></h2>
+    </div>
+    <div class="intro-row"><p class="intro">Мене звати Юлія Бондар</p><div class="about-photo"></div></div>
+    <div class="tiles2">
+      <div class="tile"><span class="dot"></span>Роблю перманент без ефекту татуажу і вії без важкості</div>
+      <div class="tile"><span class="dot"></span>Без шаблонів і «як у всіх». Спочатку людина, потім техніка</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b><span class="count" data-to="1300">1300</span>+</b><span>процедур проведено</span></div>
+      <div class="stat"><b><span class="count" data-to="5">5</span>+ років</b><span>у перманенті</span></div>
+    </div>
+  </section>
+
+  <!-- ===== ПОСЛУГИ ===== -->
+  <section class="services" id="services">
+    <h2 class="h"><span class="nw">Послуги<span class="colon" style="top:-0.014em">:</span></span></h2>
+
+    <div class="service">
+      <div class="txt">
+        <h3>Перманент брів</h3>
+        <p>форма без маркера, колір без бруду</p>
+      </div>
+      <div class="img"><img src="assets/service-brows.jpg" width="700" height="446" alt="Перманент брів: результат роботи майстра" loading="lazy"></div>
+    </div>
+
+    <div class="service">
+      <div class="txt">
+        <h3>Перманент губ</h3>
+        <p>свіжий відтінок, без «татуажного» контуру</p>
+      </div>
+      <div class="img lips"><img src="assets/service-lips.jpg" width="700" height="517" alt="Перманент губ: результат роботи майстра" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ===== МІЙ ПІДХІД ===== -->
+  <section class="approach">
+    <h2 class="h">Мій<br><span class="nw">підхід<span class="colon" style="top:0.034em">:</span></span></h2>
+    <div class="mgrid">
+      <div class="tile"><span class="dot"></span>Без шаблонних форм і однакових брів</div>
+      <div class="tile"><span class="dot"></span>З урахуванням анатомії обличчя і міміки</div>
+      <div class="tile"><span class="dot"></span>М'які відтінки без ефекту сірого або рудого</div>
+      <div class="tile"><span class="dot"></span>Пояснюю кожен етап до початку процедури, щоб ви знали, чого очікувати</div>
+      <div class="tile"><span class="dot"></span>Робота зі шкірою, а не «втирання пігменту»</div>
+      <div class="tile"><span class="dot"></span>Акуратна техніка і дбайливе загоєння</div>
+    </div>
+  </section>
+
+  <!-- ===== ПРОЦЕДУРА ПІДІЙДЕ ===== -->
+  <section class="fit">
+    <h2 class="h">Процедура<br>підійде вам,<br><span class="nw">якщо<span class="colon" style="top:-0.027em">:</span></span></h2>
+    <ol>
+      <li><i>[1]</i><span>Брови рідкі, асиметричні або з пропусками;</span></li>
+      <li><i>[2]</i><span>Форма «зникає» без макіяжу;</span></li>
+      <li><i>[3]</i><span>Хочеться доглянутості без підфарбовування;</span></li>
+      <li><i>[4]</i><span>Є старий неякісний перманент брів;</span></li>
+      <li><i>[5]</i><span>Важливо, щоб результат був природним.</span></li>
+    </ol>
+  </section>
+
+  <!-- ===== ЕТАПИ ===== -->
+  <section class="steps">
+    <h2 class="h">Етапи<br><span class="nw">процедури<span class="colon" style="top:-0.014em">:</span></span></h2>
+    <div class="step first">
+      <span class="tag">1 етап/</span>
+      <span class="txt">Консультація і обговорення результату</span>
+    </div>
+    <div class="step">
+      <span class="tag">2 етап/</span>
+      <span class="txt">Підбір форми і відтінку</span>
+    </div>
+    <div class="step">
+      <span class="tag">3 етап/</span>
+      <span class="txt">Ескіз і погодження</span>
+    </div>
+  </section>
+
+<section class="reviews" id="reviews" style="padding:110px 0 0">
+<h2 class="h" style="margin-bottom:26px;padding-left:16px"><span class="nw">Відгуки<span class="colon" style="top:-0.014em">:</span></span></h2>
+<div class="rvWrap">
+<button class="rvArrow rvPrev is-hidden" type="button" aria-label="Попередній відгук" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12H4.5M10 8.5 4.5 12 10 15.5"/></svg></button>
+<div class="rvClip">
+<div class="swiper rvSwiper" id="rvSwiper" aria-label="Відгуки клієнток">
+<div class="swiper-wrapper">
+<div class="swiper-slide" data-label="01 / 05"><article class="rv-card"><p class="rv-name">Олена К. • Перманент брів</p><p class="rv-text">Дуже боялася отримати ефект «намальованих маркером» брів, бо маю світлу шкіру. Юлія підібрала ідеальний русявий відтінок, після загоєння колір став максимально натуральним — навіть чоловік не помітив, що це перманент)</p></article></div>
+<div class="swiper-slide" data-label="02 / 05"><article class="rv-card"><p class="rv-name">Марина Т. • Перманент губ</p><p class="rv-text">Робила акварельне напилення, щоб прибрати блідість і вирівняти контур. Процедура пройшла майже безболісно, набряк зійшов вже наступного ранку. Тепер користуюсь лише прозорим блиском.</p></article></div>
+<div class="swiper-slide" data-label="03 / 05"><article class="rv-card"><p class="rv-name">Аліна • Міжвійка</p><p class="rv-text">Довго наважувалася, бо очі дуже чутливі. Все пройшло максимально комфортно і швидко, сліз майже не було. Погляд одразу став виразнішим, а зранку тепер економлю мінімум 15 хвилин на макіяж.</p></article></div>
+<div class="swiper-slide" data-label="04 / 05"><article class="rv-card"><p class="rv-name">Вікторія С. • Перекриття старого татуажу</p><p class="rv-text">Приходила виправляти старі сіро-сині брови від іншого майстра. Юлія чесно пояснила, що спочатку треба зробити одне видалення ремувером, а вже потім нове напилення. Не пошкодувала, що послухала — зараз форма і колір просто ідеальні.</p></article></div>
+<div class="swiper-slide" data-label="05 / 05"><article class="rv-card"><p class="rv-name">Ірина М. • Стрілка з розтушовкою</p><p class="rv-text">Робила стрілку два місяці тому, вже пройшла і корекцію. Дуже сподобалося, як ретельно майстер малювала ескіз, поки ми не досягли повної симетрії. Дякую за роботу!</p></article></div>
+</div>
+</div>
+</div>
+<button class="rvArrow rvNext" type="button" aria-label="Наступний відгук"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h17.5M14 8.5 19.5 12 14 15.5"/></svg></button>
+</div>
+</section>
+
+  <!-- ===== ВАРТІСТЬ ===== -->
+  <section class="prices">
+    <h2 class="h">Вартість<br><span class="nw">процедури<span class="colon" style="top:-0.014em">:</span></span></h2>
+    <ul class="price-list">
+      <li><span>Перманент брів</span><b>3500 ₴</b></li>
+      <li><span>Корекція (через 1–3 місяці)</span><b>1800 ₴</b></li>
+      <li><span>Оновлення (через 12–24 місяці)</span><b>2800 ₴</b></li>
+    </ul>
+  </section>
+
+  <!-- ===== ЧАСТІ ЗАПИТАННЯ ===== -->
+  <section class="faq">
+    <h2 class="h">Часті<br><span class="nw">запитання<span class="colon" style="top:-0.014em">:</span></span></h2>
+    <details class="qa">
+      <summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Скільки триває процедура?</span><span class="pm"></span></summary>
+      <p>Перший сеанс триває близько 2–2,5 години разом із консультацією і підбором форми. Корекція займає приблизно годину.</p>
+    </details>
+    <details class="qa">
+      <summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Чи болісно під час процедури?</span><span class="pm"></span></summary>
+      <p>Перед процедурою наносимо знеболювальний крем, тож відчуття зазвичай схожі на легке поколювання. За потреби можна зробити паузу.</p>
+    </details>
+    <details class="qa">
+      <summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Скільки тримається результат?</span><span class="pm"></span></summary>
+      <p>Пігмент тримається від 1 до 2 років залежно від типу шкіри, догляду й способу життя. Для стабільного кольору рекомендую оновлення раз на рік.</p>
+    </details>
+    <details class="qa">
+      <summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Як готуватися до процедури?</span><span class="pm"></span></summary>
+      <p>За тиждень не робіть пілінги і не загоряйте, а за добу уникайте алкоголю. Брови не потрібно фарбувати й депілювати перед візитом.</p>
+    </details>
+  <details class="qa"><summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Чи безпечна процедура і чи не змінить пігмент колір?</span><span class="pm"></span></summary><p>Використовую лише одноразові стерильні модулі-голки, які відкриваю при вас, та сертифіковані мінеральні й гібридні пігменти. Вони не мігрують у синій чи червоний відтінок, а з часом просто плавно світлішають.</p></details>
+<details class="qa"><summary><span class="qtag">ПИТАННЯ</span><span class="qtxt">Як проходить загоєння і чи обов'язкова корекція?</span><span class="pm"></span></summary><p>Загоєння триває 5–7 днів у вигляді легкого лущення без грубих кірочок, одразу після процедури можна повертатися до звичних справ. Корекція через 1–2 місяці потрібна, щоб закріпити пігмент і довести форму до ідеалу.</p></details>
+</section>
+
+  <!-- ===== КОНТАКТИ ===== -->
+  <section class="contacts">
+    <h2 class="h"><span class="nw">Записатися<span class="colon" style="top:-0.027em">:</span></span></h2>
+    <a class="more btn-12" href="tel:+380XXXXXXXXX"><span>+380 XX XXX XX XX</span></a>
+    <a class="more btn-12" href="https://instagram.com/USERNAME" target="_blank" rel="noopener"><span>Instagram</span></a>
+    <a class="more btn-12" href="https://t.me/USERNAME" target="_blank" rel="noopener"><span>Telegram</span></a>
+    <a class="more btn-12" href="https://wa.me/380XXXXXXXXX" target="_blank" rel="noopener"><span>WhatsApp</span></a>
+    <a class="more btn-12" href="viber://chat?number=%2B380XXXXXXXXX"><span>Viber</span></a>
+    <div class="loc">
+      <a class="loc-addr" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%B0%2C%2047%2C%20%D0%9A%D0%B8%D1%97%D0%B2" target="_blank" rel="noopener">м. Київ, вул. Антоновича, 47</a>
+      <p class="loc-hours">Графік роботи: Пн–Нд, 10:00 – 20:00 (за попереднім записом)</p>
+    </div>
+  </section>
+</main>
+
+<!-- ===== МОДАЛЬНЕ ВІКНО ===== -->
+<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal" id="modal">
+    <button class="close" type="button" aria-label="Закрити" data-close>×</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <form id="modalForm">
+      <input type="text" name="name" placeholder="Ваше ім'я" required>
+      <input type="tel" name="phone" placeholder="Номер телефону" required>
+      <button type="submit" class="btn-12"><span>Надіслати</span></button>
+    </form>
+    <div class="thanks">Дякую! Я зв'яжуся з вами найближчим часом.</div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var targets = document.querySelectorAll('.hero .name, .hero .sub, .hero .btns, section, .more');
+    targets.forEach(function (el) { el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach(function (el) { el.classList.add('in'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      targets.forEach(function (el) { io.observe(el); });
+    }
+
+    var content = {
+      booking: {
+        title: 'Запис на консультацію',
+        text: 'Залиште ім\u2019я та номер телефону, і я зв\u2019яжуся з вами, щоб обрати зручний час.'
+      },
+      ask: {
+        title: 'Задати запитання',
+        text: 'Залиште контакти і ваше питання, і я відповім найближчим часом.'
+      },
+      reviews: {
+        title: 'Рекомендації',
+        text: 'Відгуки клієнток я публікую в Instagram і Telegram. Залиште контакти, і я надішлю добірку.'
+      },
+      brow: {
+        title: 'Перманент брів',
+        text: 'Форма без маркера, колір без бруду. Перший сеанс триває 2–2,5 години, вартість від 3500 ₴.'
+      },
+      lips: {
+        title: 'Перманент губ',
+        text: 'Свіжий відтінок без «татуажного» контуру. Вартість уточнимо на консультації.'
+      }
+    };
+
+    var bg = document.getElementById('modalBg');
+    var modal = document.getElementById('modal');
+    var titleEl = document.getElementById('modalTitle');
+    var textEl = document.getElementById('modalText');
+    var form = document.getElementById('modalForm');
+
+    function openModal(key) {
+      var c = content[key];
+      if (!c) return;
+      titleEl.textContent = c.title;
+      textEl.textContent = c.text;
+      modal.classList.remove('sent');
+      form.reset();
+      bg.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      var first = form.querySelector('input');
+      if (first) setTimeout(function () { first.focus(); }, 50);
+    }
+    function closeModal() {
+      bg.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    /* ---------- кнопки з заливкою ----------
+       ПК (миша): заливка з hover, клік -> дія після заливки (як було).
+       Телефон/планшет (touch):
+         тап -> повна заливка -> дія;
+         утримання -> заливка слідує за пальцем;
+         відпустив раніше за повну заливку -> плавний відкат без дії.
+       При поверненні з месенджера / bfcache всі заливки скидаються. */
+    var reduceMq = { matches: false };   // анімації завжди увімкнені, незалежно від системних налаштувань
+    var FILL_MS = 220;   // тривалість повної заливки (як на ПК: 0.2 с + дія)
+    var TAP_MAX = 180;   // утримання коротше за це = тап (доливається до кінця)
+    var REV_MS = 200;    // тривалість відкату (як на ПК)
+    var PRESS_MS = reduceMq.matches ? 0 : 220;
+    var epoch = 0;       // збільшується при скиданні, щоб відкладені дії не спрацювали
+    var ext = null;      // кнопка, що веде зі сторінки: заливка лишається до повернення
+
+    function setFill(btn, p) {
+      btn.style.setProperty('--fill', p.toFixed(3));
+      btn.classList.toggle('is-inverted', p >= 0.5);
+    }
+    function tween(btn, fx, from, to, ms, done) {
+      cancelAnimationFrame(fx.raf);
+      var ep = epoch, t0 = null;
+      function frame(now) {
+        if (ep !== epoch || fx.dead) return;
+        if (t0 === null) t0 = now;
+        var k = ms > 0 ? Math.min(1, (now - t0) / ms) : 1;
+        fx.p = from + (to - from) * k;
+        setFill(btn, fx.p);
+        if (k < 1) { fx.raf = requestAnimationFrame(frame); }
+        else { fx.raf = 0; if (done) done(); }
+      }
+      fx.raf = requestAnimationFrame(frame);
+    }
+    function clearFx(btn, fx) {
+      if (fx) { fx.dead = true; cancelAnimationFrame(fx.raf); }
+      if (!fx || btn.__fx === fx) {
+        btn.__fx = null;
+        btn.__locked = false;
+        btn.classList.remove('is-pressing', 'is-inverted');
+        btn.style.removeProperty('--fill');
+      }
+    }
+    function fire(btn, fx) {
+      if (fx.fired || fx.dead) return;
+      fx.fired = true;
+      fx.phase = 'done';
+      btn.__locked = true;
+      btn.__acted = performance.now();
+      var ep = epoch;
+      setFill(btn, 1);
+      btn.__activate();
+      if (btn.__ext) { ext = btn; return; }   // перехід зі сторінки: заливка лишається, відкат при поверненні
+      setTimeout(function () {
+        if (ep !== epoch || btn.__fx !== fx) return;
+        tween(btn, fx, 1, 0, REV_MS, function () { clearFx(btn, fx); });
+      }, 350);
+    }
+    function pressStart(btn) {
+      if (btn.__fx) clearFx(btn, btn.__fx);
+      var fx = { p: 0, raf: 0, phase: 'press', at: performance.now(), fired: false, dead: false };
+      btn.__fx = fx;
+      btn.classList.add('is-pressing');
+      if (reduceMq.matches) return;            // без анімації: дія при відпусканні
+      tween(btn, fx, 0, 1, FILL_MS, function () { fire(btn, fx); });
+    }
+    function pressEnd(btn) {
+      var fx = btn.__fx;
+      if (!fx || fx.phase !== 'press') return;
+      if (reduceMq.matches) { fire(btn, fx); return; }
+      if (performance.now() - fx.at < TAP_MAX) {
+        fx.phase = 'complete';                 // тап: доливаємо до кінця і виконуємо дію
+        tween(btn, fx, fx.p, 1, FILL_MS, function () { fire(btn, fx); });   // заливка проигрывается полностью, потом дія
+      } else {
+        fx.phase = 'reverse';                  // утримали і відпустили: відкат без дії
+        tween(btn, fx, fx.p, 0, fx.p * REV_MS, function () { clearFx(btn, fx); });
+      }
+    }
+    function pressAbort(btn) {
+      var fx = btn.__fx;
+      if (!fx || fx.phase !== 'press') return;
+      fx.phase = 'reverse';
+      if (reduceMq.matches) { clearFx(btn, fx); return; }
+      tween(btn, fx, fx.p, 0, fx.p * REV_MS, function () { clearFx(btn, fx); });
+    }
+    function clickFill(btn) {                  // миша / клавіатура
+      if (btn.__busy || btn.__locked) return;
+      if (btn.__precheck && !btn.__precheck()) return;
+      btn.__busy = true;
+      var ep = epoch;
+      btn.classList.add('is-inverted');
+      btn.style.setProperty('--fill', '1');
+      setTimeout(function () {
+        if (ep !== epoch) return;
+        btn.__activate();
+        setTimeout(function () {
+          if (ep !== epoch) return;
+          btn.__busy = false;
+          btn.classList.remove('is-inverted');
+          btn.style.removeProperty('--fill');
+        }, 350);
+      }, PRESS_MS);
+    }
+    function bindFill(btn, activate, precheck) {
+      btn.__activate = activate;
+      btn.__precheck = precheck || null;
+      btn.addEventListener('pointerdown', function (e) {
+        if (e.pointerType === 'mouse' || !e.isPrimary) return;
+        btn.__touchAt = performance.now();
+        if (btn.__locked || btn.__busy) return;
+        if (btn.__precheck && !btn.__precheck()) return;
+        pressStart(btn);
+      });
+      btn.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') pressEnd(btn); });
+      btn.addEventListener('pointercancel', function () { pressAbort(btn); });
+      btn.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'mouse') pressAbort(btn); });
+      btn.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var tc = performance.now();
+        var pt = btn.__touchAt;                        // час початку дотику
+        btn.__touchAt = 0;
+        if (pt && tc - pt < 600) {
+          /* страховка: якщо pointer-шлях не спрацював (перший захід, браузер перехопив жест), дія виконується з click */
+          setTimeout(function () {
+            if ((btn.__acted || 0) >= pt) return;      // дія вже виконана з pointer-шляху
+            if (btn.__fx) clearFx(btn, btn.__fx);
+            var fx = { p: 1, raf: 0, phase: 'press', at: pt, fired: false, dead: false };
+            btn.__fx = fx;
+            btn.classList.add('is-pressing');
+            fire(btn, fx);
+          }, 700);
+          return;
+        }
+        if (pt) return;                                // touch-жест без коротного тапу вже оброблено pointer-шляхом
+        clickFill(btn);
+      });
+    }
+    function runLink(a) {
+      var href = a.getAttribute('href');
+      if (!href) return;
+      if (href.charAt(0) === '#') {
+        var t = document.querySelector(href);
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+      if (/^https?:/i.test(href) && a.target === '_blank') {
+        var w = window.open(href, '_blank');
+        if (w) { try { w.opener = null; } catch (err) {} }
+        else window.location.href = href;
+        return;
+      }
+      window.location.href = href;
+    }
+    document.querySelectorAll('a.btn-12').forEach(function (a) {
+      a.__ext = (a.getAttribute('href') || '').charAt(0) !== '#';   // посилання веде з сторінки
+      bindFill(a, function () { runLink(a); });
+    });
+    var submitBtn = form.querySelector('button[type="submit"].btn-12');
+    if (submitBtn) {
+      bindFill(submitBtn, function () { modal.classList.add('sent'); }, function () { return form.reportValidity(); });
+    }
+    document.querySelectorAll('[data-open]').forEach(function (btn) {
+      var key = btn.getAttribute('data-open');
+      if (btn.classList.contains('btn-12')) bindFill(btn, function () { openModal(key); });
+      else btn.addEventListener('click', function (e) { e.preventDefault(); openModal(key); });
+    });
+
+    /* відхід зі сторінки: скидаємо інші заливки, кнопка-перехід лишається залитою */
+    function onLeave() {
+      epoch++;
+      document.querySelectorAll('.btn-12').forEach(function (b) {
+        if (b === ext) return;
+        if (b.__fx) clearFx(b, b.__fx);
+        b.__busy = false; b.__locked = false; b.__touchAt = 0;
+        b.classList.remove('is-pressing', 'is-inverted');
+        b.style.removeProperty('--fill');
+      });
+    }
+    /* повернення (bfcache, фокус, видимість): кнопка-перехід плавно відкочується */
+    function onBack() {
+      var x = ext;
+      ext = null;
+      if (!x) return;
+      var fx = { p: 1, raf: 0, phase: 'reverse', at: 0, fired: true, dead: false };
+      x.__fx = fx;
+      x.__locked = true;
+      tween(x, fx, 1, 0, REV_MS, function () { clearFx(x, fx); });
+    }
+    ['pagehide', 'blur'].forEach(function (t) { window.addEventListener(t, onLeave); });
+    ['pageshow', 'focus'].forEach(function (t) { window.addEventListener(t, onBack); });
+    document.addEventListener('visibilitychange', function () { if (document.hidden) onLeave(); else onBack(); });
+    bg.addEventListener('click', function (e) {
+      if (e.target === bg) closeModal();
+    });
+    document.querySelector('[data-close]').addEventListener('click', closeModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
+    });
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+    /* ---------- плавные FAQ ---------- */
+    var ease = 'cubic-bezier(.22,.61,.36,1)';
+    document.querySelectorAll('.qa').forEach(function (d) {
+      var sum = d.querySelector('summary');
+      var p = d.querySelector('p');
+      var anim = null;
+      sum.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (anim) anim.cancel();
+        if (d.open && !d.classList.contains('is-closing')) {
+          d.classList.remove('is-open');
+          d.classList.add('is-closing');
+          anim = p.animate([
+            { height: p.offsetHeight + 'px', paddingBottom: '18px', opacity: 1 },
+            { height: '0px', paddingBottom: '0px', opacity: 0 }
+          ], { duration: 360, easing: ease });
+          anim.onfinish = function () { d.open = false; d.classList.remove('is-closing'); anim = null; };
+        } else {
+          d.open = true;
+          d.classList.remove('is-closing');
+          d.classList.add('is-open');
+          anim = p.animate([
+            { height: '0px', paddingBottom: '0px', opacity: 0 },
+            { height: p.offsetHeight + 'px', paddingBottom: '18px', opacity: 1 }
+          ], { duration: 480, easing: ease });
+          anim.onfinish = function () { anim = null; };
+        }
+      });
+    });
+  })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<script>
+(function () {
+  var sw = new Swiper('#rvSwiper', {
+    effect: 'cards',
+    allowTouchMove: false,
+    simulateTouch: false,
+    speed: 900
+  });
+  var btnPrev = document.querySelector('.rvPrev');
+  var btnNext = document.querySelector('.rvNext');
+  /* стрілка «назад» зникає на першому відгуку, «далі» — на останньому */
+  function syncRvArrows() {
+    btnPrev.classList.toggle('is-hidden', sw.isBeginning);
+    btnPrev.disabled = sw.isBeginning;
+    btnNext.classList.toggle('is-hidden', sw.isEnd);
+    btnNext.disabled = sw.isEnd;
+  }
+  sw.on('slideChange', syncRvArrows);
+  syncRvArrows();
+  btnPrev.addEventListener('click', function () { sw.slidePrev(); });
+  btnNext.addEventListener('click', function () { sw.slideNext(); });
+})();
+</script>
+<script>
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.count'));
+  if (!els.length || !('IntersectionObserver' in window)) return;
+  var DURATION = 1800;
+  function easeOutExpo(t) { return t >= 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+  function animate(el) {
+    var to = parseInt(el.getAttribute('data-to'), 10);
+    var start = null;
+    function frame(ts) {
+      if (start === null) start = ts;
+      var k = Math.min(1, (ts - start) / DURATION);
+      el.textContent = k < 1 ? String(Math.round(easeOutExpo(k) * to)) : String(to);
+      if (k < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  els.forEach(function (el) { el.textContent = '0'; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+  els.forEach(function (el) { io.observe(el); });
+})();
+
+/* відгуки: якщо довгий текст не вміщується в картку, зменшуємо тільки його шрифт (розмір картки не змінюється) */
+(function () {
+  var MIN = 12;
+  function fit() {
+    document.querySelectorAll('#rvSwiper .rv-card').forEach(function (card) {
+      var t = card.querySelector('.rv-text');
+      if (!t) return;
+      t.style.removeProperty('font-size');
+      var size = parseFloat(getComputedStyle(t).fontSize);
+      for (var i = 0; i < 30 && card.scrollHeight > card.clientHeight + 1 && size > MIN; i++) {
+        size = Math.max(MIN, size - 0.5);
+        t.style.setProperty('font-size', size + 'px', 'important');
+      }
+    });
+  }
+  var timer;
+  function schedule() { clearTimeout(timer); timer = setTimeout(fit, 150); }
+  fit();
+  window.addEventListener('load', fit);
+  window.addEventListener('resize', schedule);
+  window.addEventListener('orientationchange', schedule);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body>
+</html>
